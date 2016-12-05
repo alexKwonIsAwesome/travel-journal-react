@@ -21,6 +21,10 @@ $(document).foundation();
 require('style!css!sass!applicationStyles')
 
 ReactDOM.render(
-  <App/>,
+  <Router history={hashHistory}>
+    <Route path="/">
+      <IndexRoute component={App} />
+    </Route>
+  </Router>,
   document.getElementById('app')
 );

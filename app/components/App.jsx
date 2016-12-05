@@ -5,6 +5,7 @@ var App = React.createClass({
    return (
      <div>
       <p>Hello world!</p>
+      {this.props.children}
      </div>
    );
   }
