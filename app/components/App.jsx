@@ -13,7 +13,7 @@ var App = React.createClass({
         <PostList />
       </div>
       <div className="small-9 columns">
-        <PostDetail />
+        {this.props.children}
       </div>
      </div>
    );

@@ -5,6 +5,8 @@ var {Provider} = require('react-redux');
 
 // Components
 var App = require('App');
+var Intro = require('Intro');
+var PostDetail = require('PostDetail');
 
 // Reducers
 
@@ -22,8 +24,9 @@ require('style!css!sass!applicationStyles')
 
 ReactDOM.render(
   <Router history={hashHistory}>
-    <Route path="/">
-      <IndexRoute component={App} />
+    <Route path="/" component={App}>
+      <IndexRoute component={Intro}/>
+      <Route path="post:postId" component={PostDetail}/>
     </Route>
   </Router>,
   document.getElementById('app')
