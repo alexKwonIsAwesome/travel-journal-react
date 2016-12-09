@@ -10,7 +10,7 @@ var App = React.createClass({
      <div className="expanded row">
       <Header />
       <div className="small-3 columns">
-        <PostList />
+        <PostList/>
       </div>
       <div className="small-9 columns">
         {this.props.children}
